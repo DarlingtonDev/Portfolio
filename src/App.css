@@ -1145,4 +1145,121 @@ footer {
     color: #028a0f;
     font-size: 16px;
   }
+
+  .services {
+    width: 100%;
+    height: 100%;
+    padding-bottom: 5em;
+  }
+
+  .service-head {
+    text-align: center;
+    margin-top: 3em;
+  }
+
+  .service-head h1 {
+    text-transform: capitalize;
+    font-family: "Fira Sans", sans-serif;
+  }
+
+  .service-head p {
+    margin-top: 1em;
+    text-transform: capitalize;
+    font-family: "Fira Sans", sans-serif;
+    line-height: 1.4em;
+    font-size: 15px;
+  }
+
+  .services-sec {
+    margin-top: 2em;
+    position: relative;
+    margin-left: 1em;
+    margin-right: 1em;
+  }
+
+  .service-div {
+    display: flex;
+    flex-wrap: wrap;
+    width: 10%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    justify-content: space-around;
+    column-gap: 0.7em;
+    row-gap: 0.8em;
+    display: none;
+  }
+
+  .service-div-bottom {
+    display: flex;
+    flex-wrap: wrap;
+    width: 10%;
+    position: absolute;
+    bottom: 0.2em;
+    right: 0;
+    justify-content: space-around;
+    column-gap: 0.7em;
+    row-gap: 0.8em;
+  }
+
+  .service-boxes {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .service-box {
+    flex: 0 0 40%;
+    margin-left: 2em;
+    margin-top: 2.5em;
+    display: flex;
+    justify-content: space-between;
+    height: 20vh;
+    align-items: center;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    padding-right: 0.3em;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.5);
+    background-color: rgb(202, 202, 202);
+    background-color: white;
+    border-radius: 10px;
+    z-index: 3;
+  }
+
+  .service-box-body {
+    width: 80%;
+  }
+  .service-box-body h2 {
+    font-family: "Fira Sans", sans-serif;
+    font-size: 20px;
+  }
+
+  .service-box-body p {
+    margin-top: 0.5em;
+    font-family: "Fira Sans", sans-serif;
+    font-size: 14px;
+  }
+
+  .services-sec-2 {
+    margin-top: 2em;
+    position: relative;
+    /* margin-left: 2em;
+    margin-right: 2em; */
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .service-div-2 {
+    display: flex;
+    flex-wrap: wrap;
+    width: 10%;
+    position: absolute;
+    bottom: -2em;
+    right: 1.8em;
+    justify-content: flex-end;
+    column-gap: 0.7em;
+    row-gap: 0.8em;
+    display: none;
+  }
 }
