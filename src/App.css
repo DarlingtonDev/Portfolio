@@ -1150,6 +1150,8 @@ footer {
     width: 100%;
     height: 100%;
     padding-bottom: 5em;
+    padding-right: 1em;
+    padding-left: 1em;
   }
 
   .service-head {
@@ -1173,47 +1175,35 @@ footer {
   .services-sec {
     margin-top: 2em;
     position: relative;
-    margin-left: 1em;
-    margin-right: 1em;
+    margin-left: 0em;
+    margin-right: 0em;
+    border: 1px solid black;
+    display: none;
+  }
+  .service-sec-mobile {
+    margin-top: 1em;
+    position: relative;
+    margin-left: 0em;
+    margin-right: 0em;
+    padding-left: 0em;
   }
 
   .service-div {
-    display: flex;
-    flex-wrap: wrap;
-    width: 10%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    justify-content: space-around;
-    column-gap: 0.7em;
-    row-gap: 0.8em;
     display: none;
   }
 
-  .service-div-bottom {
-    display: flex;
-    flex-wrap: wrap;
-    width: 10%;
-    position: absolute;
-    bottom: 0.2em;
-    right: 0;
-    justify-content: space-around;
-    column-gap: 0.7em;
-    row-gap: 0.8em;
-  }
-
-  .service-boxes {
+  .service-boxes-mobile {
     width: 100%;
     display: flex;
     flex-direction: column;
+    column-gap: 1.3em;
   }
 
-  .service-box {
-    flex: 0 0 40%;
-    margin-left: 2em;
+  .service-box-mobile {
+    /* flex: 0 0 40%; */
     margin-top: 2.5em;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     height: 20vh;
     align-items: center;
     padding-top: 0.5em;
@@ -1223,31 +1213,34 @@ footer {
     background-color: rgb(202, 202, 202);
     background-color: white;
     border-radius: 10px;
+
     z-index: 3;
   }
 
-  .service-box-body {
-    width: 80%;
+  .service-box-body-mobile {
+    width: 100%;
   }
-  .service-box-body h2 {
+  .service-box-body-mobile h2 {
     font-family: "Fira Sans", sans-serif;
     font-size: 20px;
   }
 
-  .service-box-body p {
+  .service-box-body-mobile p {
     margin-top: 0.5em;
     font-family: "Fira Sans", sans-serif;
-    font-size: 14px;
+    font-size: 15px;
   }
 
   .services-sec-2 {
     margin-top: 2em;
     position: relative;
-    /* margin-left: 2em;
-    margin-right: 2em; */
+    margin-left: 0em;
+    margin-right: 0em;
     width: 100%;
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
+    border: 1px solid black;
+    display: none;
   }
 
   .service-div-2 {
