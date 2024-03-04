@@ -1,5 +1,3 @@
-import { Link, NavLink } from "react-router-dom";
-
 export const Project = () => {
   return (
     <div className="project-sec">

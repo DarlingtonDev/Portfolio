@@ -1,4 +1,6 @@
 import { Link } from "react-router-dom";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faBars } from "@fortawesome/free-solid-svg-icons";
 import "./App.css";
 export const Header = () => {
   return (
@@ -32,6 +34,12 @@ export const Header = () => {
           <option value="de">DE</option>
         </select>
         <button className="hire-me">Hire Me</button>
+      </div>
+      <div className="burger-menu">
+        <FontAwesomeIcon
+          icon={faBars}
+          style={{ fontSize: "25px", color: "rgba(2, 138, 15, 0.8)" }}
+        />
       </div>
     </header>
   );
