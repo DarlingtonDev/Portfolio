@@ -421,6 +421,10 @@ span {
   row-gap: 0.8em;
 }
 
+.service-sec-mobile {
+  display: none;
+}
+
 .service-div-bottom {
   display: flex;
   flex-wrap: wrap;
@@ -1183,9 +1187,10 @@ footer {
   .service-sec-mobile {
     margin-top: 1em;
     position: relative;
-    margin-left: 0em;
-    margin-right: 0em;
+    margin-left: 1em;
+    margin-right: 1em;
     padding-left: 0em;
+    display: block;
   }
 
   .service-div {
@@ -1204,7 +1209,7 @@ footer {
     margin-top: 2.5em;
     display: flex;
     justify-content: center;
-    height: 20vh;
+    height: 25vh;
     align-items: center;
     padding-top: 0.5em;
     padding-bottom: 0.5em;
