@@ -793,6 +793,12 @@ footer {
     height: 0.3em;
     background-color: rgba(2, 138, 15, 0.8);
     border-radius: 5px;
+    transition: all ease-in 0.3s;
+  }
+
+  .one-div {
+    transform: translateX(-0.5em) rotate(130deg);
+    width: 1em;
   }
 
   .logo a {

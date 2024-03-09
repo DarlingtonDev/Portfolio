@@ -6,8 +6,10 @@ import { useState } from "react";
 export const Header = () => {
   const [isClicked, setIsClicked] = useState(false);
   function changeMenu() {
-    setIsClicked(true);
+    setIsClicked(!isClicked);
+    console.log(isClicked);
   }
+
   return (
     <header>
       <div className="logo">
@@ -40,18 +42,32 @@ export const Header = () => {
         </select>
         <button className="hire-me">Hire Me</button>
       </div>
-      <div
-        className="burger-menu"
-        onClick={changeMenu}
-        style={{ display: "none" ? isClicked : "flex" }}
-      >
+      <div className="burger-menu" onClick={changeMenu}>
         {/* <FontAwesomeIcon
           icon={faBars}
           style={{ fontSize: "25px", color: "rgba(2, 138, 15, 0.8)" }}
         /> */}
-        <div className="div-1"></div>
-        <div className="div-1"></div>
-        <div className="div-1"></div>
+        <div
+          className="div-1 "
+          style={{
+            width: isClicked && "1em",
+            transform: isClicked && "translateX(-0.4em) rotate(135deg)",
+          }}
+        ></div>
+        <div
+          className="div-1"
+          style={{
+            width: isClicked && "1.8em",
+            transform: isClicked && "translateX(-0.1em)",
+          }}
+        ></div>
+        <div
+          className="div-1"
+          style={{
+            width: isClicked && "1em",
+            transform: isClicked && "translateX(-0.4em) rotate(-130deg)",
+          }}
+        ></div>
       </div>
     </header>
   );
