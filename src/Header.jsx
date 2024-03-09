@@ -42,7 +42,11 @@ export const Header = () => {
         </select>
         <button className="hire-me">Hire Me</button>
       </div>
-      <div className="burger-menu" onClick={changeMenu}>
+      <div
+        className="burger-menu"
+        onClick={changeMenu}
+        style={{ gap: isClicked && "0.1em" }}
+      >
         {/* <FontAwesomeIcon
           icon={faBars}
           style={{ fontSize: "25px", color: "rgba(2, 138, 15, 0.8)" }}
@@ -51,21 +55,23 @@ export const Header = () => {
           className="div-1 "
           style={{
             width: isClicked && "1em",
-            transform: isClicked && "translateX(-0.4em) rotate(135deg)",
+            transform:
+              isClicked &&
+              "translateX(-0.45em) translateY(0.1em) rotate(-47deg)",
           }}
         ></div>
         <div
           className="div-1"
           style={{
             width: isClicked && "1.8em",
-            transform: isClicked && "translateX(-0.1em)",
+            transform: isClicked && "translateX(-0.01em)",
           }}
         ></div>
         <div
           className="div-1"
           style={{
             width: isClicked && "1em",
-            transform: isClicked && "translateX(-0.4em) rotate(-130deg)",
+            transform: isClicked && "translateX(-0.35em) rotate(45deg)",
           }}
         ></div>
       </div>
