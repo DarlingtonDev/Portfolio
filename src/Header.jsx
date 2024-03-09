@@ -36,10 +36,13 @@ export const Header = () => {
         <button className="hire-me">Hire Me</button>
       </div>
       <div className="burger-menu">
-        <FontAwesomeIcon
+        {/* <FontAwesomeIcon
           icon={faBars}
           style={{ fontSize: "25px", color: "rgba(2, 138, 15, 0.8)" }}
-        />
+        /> */}
+        <div className="div-1"></div>
+        <div className="div-1"></div>
+        <div className="div-1"></div>
       </div>
     </header>
   );
