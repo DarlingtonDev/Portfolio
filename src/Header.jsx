@@ -63,7 +63,7 @@ export const Header = () => {
         <div
           className="div-1"
           style={{
-            width: isClicked && "1.8em",
+            width: isClicked && "1.5em",
             transform: isClicked && "translateX(-0.01em)",
           }}
         ></div>
