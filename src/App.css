@@ -782,10 +782,26 @@ footer {
     align-items: center;
   }
 
+  .nav-bar {
+    position: absolute;
+    top: 0;
+    z-index: 9;
+    width: 20%;
+    background-color: transparent;
+    height: 100%;
+    right: 0;
+    padding-left: 1.8em;
+    padding-right: 1.8em;
+    transition: all ease-in-out 0.3s;
+  }
+
   .burger-menu {
     display: flex;
     flex-direction: column;
     gap: 0.2em;
+    position: absolute;
+    z-index: 10;
+    top: 1.5em;
   }
 
   .div-1 {

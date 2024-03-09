@@ -2,14 +2,7 @@ import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 import "./App.css";
-import { useState } from "react";
 export const Header = () => {
-  const [isClicked, setIsClicked] = useState(false);
-  function changeMenu() {
-    setIsClicked(!isClicked);
-    console.log(isClicked);
-  }
-
   return (
     <header>
       <div className="logo">
@@ -41,41 +34,6 @@ export const Header = () => {
           <option value="de">DE</option>
         </select>
         <button className="hire-me">Hire Me</button>
-      </div>
-      <div
-        className="burger-menu"
-        onClick={changeMenu}
-        style={{ gap: isClicked && "0.1em" }}
-      >
-        {/* <FontAwesomeIcon
-          icon={faBars}
-          style={{ fontSize: "25px", color: "rgba(2, 138, 15, 0.8)" }}
-        /> */}
-        <div
-          className="div-1 "
-          style={{
-            width: isClicked && "1em",
-            transform:
-              isClicked &&
-              "translateX(-0.45em) translateY(0.1em) rotate(-47deg)",
-          }}
-        ></div>
-        <div
-          className="div-1"
-          style={{
-            width: isClicked && "1.5em",
-            transform: isClicked && "translateX(-0.01em)",
-          }}
-        ></div>
-        <div
-          className="div-1"
-          style={{
-            width: isClicked && "1em",
-            transform:
-              isClicked &&
-              "translateX(-0.4em) translateY(-0.1em)  rotate(45deg)",
-          }}
-        ></div>
       </div>
     </header>
   );
