@@ -71,7 +71,9 @@ export const Header = () => {
           className="div-1"
           style={{
             width: isClicked && "1em",
-            transform: isClicked && "translateX(-0.35em) rotate(45deg)",
+            transform:
+              isClicked &&
+              "translateX(-0.4em) translateY(-0.1em)  rotate(45deg)",
           }}
         ></div>
       </div>
