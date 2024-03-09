@@ -2,7 +2,12 @@ import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 import "./App.css";
+import { useState } from "react";
 export const Header = () => {
+  const [isClicked, setIsClicked] = useState(false);
+  function changeMenu() {
+    setIsClicked(true);
+  }
   return (
     <header>
       <div className="logo">
@@ -35,7 +40,11 @@ export const Header = () => {
         </select>
         <button className="hire-me">Hire Me</button>
       </div>
-      <div className="burger-menu">
+      <div
+        className="burger-menu"
+        onClick={changeMenu}
+        style={{ display: "none" ? isClicked : "flex" }}
+      >
         {/* <FontAwesomeIcon
           icon={faBars}
           style={{ fontSize: "25px", color: "rgba(2, 138, 15, 0.8)" }}
