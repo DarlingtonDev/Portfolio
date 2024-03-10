@@ -91,6 +91,9 @@ export const Home = () => {
                 <li>
                   <Link to="">Projects</Link>
                 </li>
+                <li>
+                  <Link to="">Contact Us</Link>
+                </li>
               </ul>
             </nav>
             <button className="hire-me">Hire Me</button>

@@ -813,7 +813,7 @@ footer {
   .navigation-links nav ul {
     display: flex;
     flex-direction: column;
-    gap: 3em;
+    gap: 2em;
     justify-content: space-around;
     align-items: center;
   }
