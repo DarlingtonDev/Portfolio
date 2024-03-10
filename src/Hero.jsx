@@ -1,5 +1,9 @@
 import avatar from "./Images/peeps-avatar-removebg-preview.png";
 export const Hero = () => {
+  const scrollEr = (id) => {
+    const elemenT = document.getElementById(id);
+    elemenT.scrollIntoView({ behavior: "smooth" });
+  };
   return (
     <div className="hero-sec">
       <div className="first-hero">
@@ -13,7 +17,8 @@ export const Hero = () => {
           web and mobile applications.
         </p>
         <div className="btn-div">
-          <button>contact us</button>
+          <button onClick={() => scrollEr("contact")}>contact us</button>
+
           <button>learn more</button>
         </div>
       </div>

@@ -5,6 +5,9 @@
   position: relative;
 }
 
+body {
+  scroll-behavior: smooth;
+}
 .homepage {
   width: 100%;
   height: 100%;
@@ -828,7 +831,7 @@ footer {
   }
 
   .navigation-links .hire-me {
-    margin-top: 4em;
+    margin-top: 3em;
   }
 
   .burger-menu {

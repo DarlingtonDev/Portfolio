@@ -4,7 +4,7 @@ import { faEnvelope } from "@fortawesome/free-regular-svg-icons";
 import { faLocationDot } from "@fortawesome/free-solid-svg-icons";
 export const Contact = () => {
   return (
-    <div className="contact-page">
+    <div className="contact-page" id="contact">
       <div className="contact-head">
         <h1>contact us</h1>
         <h3>let's discuss your project</h3>
