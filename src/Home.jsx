@@ -1,5 +1,6 @@
 import { About } from "./About";
 import { Achievement } from "./Acheivements";
+import { Link } from "react-router-dom";
 import "./App.css";
 import { useState } from "react";
 import { Contact } from "./Contact";
@@ -12,13 +13,14 @@ import { Service } from "./Services";
 import { Technology } from "./Tecnology";
 export const Home = () => {
   const [isClicked, setIsClicked] = useState(false);
+  const [overFlow, setOverFlow] = useState("auto");
   function changeMenu() {
     setIsClicked(!isClicked);
-    console.log(isClicked);
+    setOverFlow("hidden");
   }
   return (
     <>
-      <div className="homepage">
+      <div className="homepage" style={{ overflowY: overFlow }}>
         <Header />
         <Hero />
 
@@ -35,6 +37,7 @@ export const Home = () => {
           style={{
             width: isClicked && "100%",
             backgroundColor: isClicked && "white",
+            position: isClicked && "fixed",
           }}
         >
           <div
@@ -71,6 +74,26 @@ export const Home = () => {
                   "translateX(-0.4em) translateY(-0.1em)  rotate(45deg)",
               }}
             ></div>
+          </div>
+
+          <div
+            className="navigation-links"
+            style={{ display: !isClicked && "none" }}
+          >
+            <nav>
+              <ul>
+                <li>
+                  <Link to="">About Me</Link>
+                </li>
+                <li>
+                  <Link to="">Services</Link>
+                </li>
+                <li>
+                  <Link to="">Projects</Link>
+                </li>
+              </ul>
+            </nav>
+            <button className="hire-me">Hire Me</button>
           </div>
         </div>
       </div>
