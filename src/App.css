@@ -786,6 +786,10 @@ footer {
   }
 
   .nav-bar {
+    overflow: hidden;
+  }
+
+  .nav-bar {
     position: absolute;
     top: 0;
     z-index: 9;
@@ -806,7 +810,7 @@ footer {
     transition: ease-in;
     position: fixed;
     justify-self: center;
-    margin-top: 8em;
+    margin-top: 7em;
     transition: all;
   }
 
@@ -818,8 +822,8 @@ footer {
     flex-direction: column;
     gap: 2em;
     justify-content: space-around;
-    align-items: center;
-    border: 1px solid black;
+    align-items: start;
+
     width: 100%;
   }
 
@@ -829,11 +833,12 @@ footer {
     text-transform: uppercase;
     /* font-family: "Kanit", sans-serif; */
     font-family: "Fira Sans", sans-serif;
-    font-size: 16px;
+    font-size: 15px;
   }
 
   .navigation-links .hire-me {
     margin-top: 3em;
+    margin-left: -1em;
   }
 
   .burger-menu {
@@ -922,7 +927,7 @@ footer {
   } */
 
   .hero-sec {
-    margin-top: 3.5em;
+    margin-top: 6.2em;
     display: flex;
     justify-content: space-between;
     flex-direction: column;

@@ -1,10 +1,10 @@
 import { Link } from "react-router-dom";
 import "./App.css";
-export const Header = () => {
+export const Header = (props) => {
   return (
     <header>
       <div className="logo">
-        <Link to="">
+        <Link to="" style={{ position: props.isClicked && "fixed" }}>
           <h2>fortune</h2>
         </Link>
       </div>

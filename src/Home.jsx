@@ -21,7 +21,7 @@ export const Home = () => {
   return (
     <>
       <div className="homepage" style={{ overflowY: overFlow }}>
-        <Header />
+        <Header isClicked={isClicked} />
         <Hero />
 
         <Achievement />
