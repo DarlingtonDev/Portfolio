@@ -38,6 +38,7 @@ export const Home = () => {
             width: isClicked && "100%",
             backgroundColor: isClicked && "white",
             position: isClicked && "fixed",
+            boxShadow: isClicked && "0px 1px 2px rgba(0, 0, 0, 0.5)",
           }}
         >
           <div

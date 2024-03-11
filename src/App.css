@@ -802,7 +802,7 @@ footer {
   }
 
   .navigation-links {
-    align-self: center;
+    align-self: flex-start;
     transition: ease-in;
     position: fixed;
     justify-self: center;
@@ -819,6 +819,8 @@ footer {
     gap: 2em;
     justify-content: space-around;
     align-items: center;
+    border: 1px solid black;
+    width: 100%;
   }
 
   .navigation-links nav li a {
@@ -841,6 +843,7 @@ footer {
     position: absolute;
     z-index: 10;
     top: 1.5em;
+    right: 1.2em;
   }
 
   .div-1 {
@@ -862,6 +865,8 @@ footer {
     color: #028a0f;
     text-decoration: none;
     font-size: 21px;
+    position: absolute;
+    z-index: 10;
   }
 
   header nav {
