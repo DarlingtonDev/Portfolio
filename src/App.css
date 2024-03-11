@@ -869,7 +869,7 @@ footer {
     text-transform: capitalize;
     color: #028a0f;
     text-decoration: none;
-    font-size: 21px;
+    font-size: 19px;
     position: absolute;
     z-index: 10;
   }
@@ -927,7 +927,7 @@ footer {
   } */
 
   .hero-sec {
-    margin-top: 6.2em;
+    margin-top: 7em;
     display: flex;
     justify-content: space-between;
     flex-direction: column;
