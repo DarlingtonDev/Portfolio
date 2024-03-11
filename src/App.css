@@ -852,8 +852,8 @@ footer {
   }
 
   .div-1 {
-    width: 2em;
-    height: 0.3em;
+    width: 1.8em;
+    height: 0.2em;
     background-color: rgba(2, 138, 15, 0.8);
     border-radius: 5px;
     transition: all ease-in 0.3s;
