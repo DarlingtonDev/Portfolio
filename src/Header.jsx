@@ -11,7 +11,7 @@ export const Header = (props) => {
       <nav>
         <ul>
           <li>
-            <Link to="">About Me</Link>
+            <Link to="/AboutPage">About Me</Link>
           </li>
           <li>
             <Link to="">Services</Link>

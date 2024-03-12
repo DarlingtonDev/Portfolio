@@ -18,11 +18,9 @@ import { faFlask } from "@fortawesome/free-solid-svg-icons";
 import { faPhone } from "@fortawesome/free-solid-svg-icons";
 export const Home = () => {
   const [isClicked, setIsClicked] = useState(false);
+  const [aboutClick, setAboutClick] = useState(false);
   const [overFlow, setOverFlow] = useState("auto");
-  function changeMenu() {
-    setIsClicked(!isClicked);
-    setOverFlow("hidden");
-  }
+
   return (
     <>
       <div className="homepage" style={{ overflowY: overFlow }}>
@@ -37,91 +35,112 @@ export const Home = () => {
         <Technology />
         <Contact />
         <Footer />
-        <div
-          className="nav-bar"
-          style={{
-            width: isClicked && "100%",
-            backgroundColor: isClicked && "white",
-            position: isClicked && "fixed",
-            boxShadow: isClicked && "0px 1px 2px rgba(0, 0, 0, 0.5)",
-          }}
-        >
-          <div
-            className="burger-menu"
-            onClick={changeMenu}
-            style={{ gap: isClicked && "0.1em" }}
-          >
-            {/* <FontAwesomeIcon
-          icon={faBars}
-          style={{ fontSize: "25px", color: "rgba(2, 138, 15, 0.8)" }}
-        /> */}
-            <div
-              className="div-1 "
-              style={{
-                width: isClicked && "1em",
-                transform:
-                  isClicked &&
-                  "translateX(-0.4em) translateY(0.1em) rotate(-40deg)",
-              }}
-            ></div>
-            <div
-              className="div-1"
-              style={{
-                width: isClicked && "1.5em",
-                transform: isClicked && "translateX(-0.01em)",
-              }}
-            ></div>
-            <div
-              className="div-1"
-              style={{
-                width: isClicked && "1em",
-                transform:
-                  isClicked &&
-                  "translateX(-0.4em) translateY(-0.1em)  rotate(42deg)",
-              }}
-            ></div>
-          </div>
-
-          <div
-            className="navigation-links"
-            style={{ display: !isClicked && "none" }}
-          >
-            <nav>
-              <ul>
-                <li>
-                  <FontAwesomeIcon
-                    icon={faUser}
-                    style={{ color: "#028a0f", marginRight: "0.5em" }}
-                  />
-                  <Link to="">About Me</Link>
-                </li>
-                <li>
-                  <FontAwesomeIcon
-                    icon={faCreativeCommonsNd}
-                    style={{ color: "#028a0f", marginRight: "0.5em" }}
-                  />
-                  <Link to="">Services</Link>
-                </li>
-                <li>
-                  <FontAwesomeIcon
-                    icon={faFlask}
-                    style={{ color: "#028a0f", marginRight: "0.5em" }}
-                  />
-                  <Link to="">Projects</Link>
-                </li>
-                <li>
-                  <FontAwesomeIcon
-                    icon={faPhone}
-                    style={{ color: "#028a0f", marginRight: "0.5em" }}
-                  />
-                  <Link to="">Contact Us</Link>
-                </li>
-              </ul>
-            </nav>
-            <button className="hire-me">Hire Me</button>
-          </div>
-        </div>
+        <ResponsiveNav
+          isClicked={isClicked}
+          aboutClick={aboutClick}
+          setAboutClick={setAboutClick}
+          setIsClicked={setIsClicked}
+          setOverFlow={setOverFlow}
+        />
       </div>
     </>
+  );
+};
+
+export const ResponsiveNav = (props) => {
+  function setAboutWidth() {
+    props.setAboutClick(!props.aboutClick);
+  }
+
+  function changeMenu() {
+    props.setIsClicked(!props.isClicked);
+    props.setOverFlow("hidden");
+  }
+  return (
+    <div
+      className="nav-bar"
+      style={{
+        transition: props.isClicked && "all ease-in-out 0.5s",
+        width: props.isClicked ? "100%" : props.aboutClick && "20%",
+        backgroundColor: props.isClicked && "white",
+        position: props.isClicked && "fixed",
+        boxShadow: props.isClicked && "0px 1px 2px rgba(0, 0, 0, 0.5)",
+      }}
+    >
+      <div
+        className="burger-menu"
+        onClick={changeMenu}
+        style={{ gap: props.isClicked && "0.1em" }}
+      >
+        {/* <FontAwesomeIcon
+icon={faBars}
+style={{ fontSize: "25px", color: "rgba(2, 138, 15, 0.8)" }}
+/> */}
+        <div
+          className="div-1 "
+          style={{
+            width: props.isClicked && "1em",
+            transform:
+              props.isClicked &&
+              "translateX(-0.4em) translateY(0.1em) rotate(-40deg)",
+          }}
+        ></div>
+        <div
+          className="div-1"
+          style={{
+            width: props.isClicked && "1.5em",
+            transform: props.isClicked && "translateX(-0.01em)",
+          }}
+        ></div>
+        <div
+          className="div-1"
+          style={{
+            width: props.isClicked && "1em",
+            transform:
+              props.isClicked &&
+              "translateX(-0.4em) translateY(-0.1em)  rotate(42deg)",
+          }}
+        ></div>
+      </div>
+
+      <div
+        className="navigation-links"
+        style={{ display: !props.isClicked && "none" }}
+      >
+        <nav>
+          <ul>
+            <li onClick={setAboutWidth}>
+              <FontAwesomeIcon
+                icon={faUser}
+                style={{ color: "#028a0f", marginRight: "0.5em" }}
+              />
+              <Link to="/AboutPage">About Me</Link>
+            </li>
+            <li>
+              <FontAwesomeIcon
+                icon={faCreativeCommonsNd}
+                style={{ color: "#028a0f", marginRight: "0.5em" }}
+              />
+              <Link to="">Services</Link>
+            </li>
+            <li>
+              <FontAwesomeIcon
+                icon={faFlask}
+                style={{ color: "#028a0f", marginRight: "0.5em" }}
+              />
+              <Link to="">Projects</Link>
+            </li>
+            <li>
+              <FontAwesomeIcon
+                icon={faPhone}
+                style={{ color: "#028a0f", marginRight: "0.5em" }}
+              />
+              <Link to="">Contact Us</Link>
+            </li>
+          </ul>
+        </nav>
+        <button className="hire-me">Hire Me</button>
+      </div>
+    </div>
   );
 };
