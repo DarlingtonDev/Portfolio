@@ -11,6 +11,11 @@ import { Hero } from "./Hero";
 import { Project } from "./Projects";
 import { Service } from "./Services";
 import { Technology } from "./Tecnology";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faUser } from "@fortawesome/free-regular-svg-icons";
+import { faCreativeCommonsNd } from "@fortawesome/free-brands-svg-icons";
+import { faFlask } from "@fortawesome/free-solid-svg-icons";
+import { faPhone } from "@fortawesome/free-solid-svg-icons";
 export const Home = () => {
   const [isClicked, setIsClicked] = useState(false);
   const [overFlow, setOverFlow] = useState("auto");
@@ -56,7 +61,7 @@ export const Home = () => {
                 width: isClicked && "1em",
                 transform:
                   isClicked &&
-                  "translateX(-0.45em) translateY(0.1em) rotate(-47deg)",
+                  "translateX(-0.4em) translateY(0.1em) rotate(-40deg)",
               }}
             ></div>
             <div
@@ -72,7 +77,7 @@ export const Home = () => {
                 width: isClicked && "1em",
                 transform:
                   isClicked &&
-                  "translateX(-0.4em) translateY(-0.1em)  rotate(45deg)",
+                  "translateX(-0.4em) translateY(-0.1em)  rotate(42deg)",
               }}
             ></div>
           </div>
@@ -84,15 +89,31 @@ export const Home = () => {
             <nav>
               <ul>
                 <li>
+                  <FontAwesomeIcon
+                    icon={faUser}
+                    style={{ color: "#028a0f", marginRight: "0.5em" }}
+                  />
                   <Link to="">About Me</Link>
                 </li>
                 <li>
+                  <FontAwesomeIcon
+                    icon={faCreativeCommonsNd}
+                    style={{ color: "#028a0f", marginRight: "0.5em" }}
+                  />
                   <Link to="">Services</Link>
                 </li>
                 <li>
+                  <FontAwesomeIcon
+                    icon={faFlask}
+                    style={{ color: "#028a0f", marginRight: "0.5em" }}
+                  />
                   <Link to="">Projects</Link>
                 </li>
                 <li>
+                  <FontAwesomeIcon
+                    icon={faPhone}
+                    style={{ color: "#028a0f", marginRight: "0.5em" }}
+                  />
                   <Link to="">Contact Us</Link>
                 </li>
               </ul>

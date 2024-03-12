@@ -822,7 +822,7 @@ footer {
     flex-direction: column;
     gap: 2em;
     justify-content: space-around;
-    align-items: start;
+    align-items: flex-start;
 
     width: 100%;
   }
