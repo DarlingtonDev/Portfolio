@@ -79,26 +79,22 @@ style={{ fontSize: "25px", color: "rgba(2, 138, 15, 0.8)" }}
         <div
           className="div-1 "
           style={{
-            width: props.isClicked && "1em",
-            transform:
-              props.isClicked &&
-              "translateX(-0.4em) translateY(0.1em) rotate(-40deg)",
+            width: props.isClicked && "1.5em",
+            transform: props.isClicked && "translateY(0.5em) rotate(-50deg)",
           }}
         ></div>
         <div
           className="div-1"
           style={{
-            width: props.isClicked && "1.5em",
+            width: props.isClicked && "0em",
             transform: props.isClicked && "translateX(-0.01em)",
           }}
         ></div>
         <div
           className="div-1"
           style={{
-            width: props.isClicked && "1em",
-            transform:
-              props.isClicked &&
-              "translateX(-0.4em) translateY(-0.1em)  rotate(42deg)",
+            width: props.isClicked && "1.5em",
+            transform: props.isClicked && "translateY(-0.1em) rotate(42deg)",
           }}
         ></div>
       </div>
