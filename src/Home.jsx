@@ -80,7 +80,7 @@ style={{ fontSize: "25px", color: "rgba(2, 138, 15, 0.8)" }}
           className="div-1 "
           style={{
             width: props.isClicked && "1.5em",
-            transform: props.isClicked && "translateY(0.5em) rotate(-50deg)",
+            transform: props.isClicked && "translateY(0.5em) rotate(-48deg)",
           }}
         ></div>
         <div
@@ -94,7 +94,7 @@ style={{ fontSize: "25px", color: "rgba(2, 138, 15, 0.8)" }}
           className="div-1"
           style={{
             width: props.isClicked && "1.5em",
-            transform: props.isClicked && "translateY(-0.1em) rotate(42deg)",
+            transform: props.isClicked && "translateY(-0.15em) rotate(45deg)",
           }}
         ></div>
       </div>
