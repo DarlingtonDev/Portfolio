@@ -775,6 +775,7 @@ footer {
 
 @media only screen and (max-width: 767px) {
   /* Your styles for mobile phones */
+
   header {
     width: 100%;
     display: flex;
@@ -785,60 +786,26 @@ footer {
     align-items: center;
   }
 
-  .nav-bar {
-    overflow: hidden;
-  }
-
-  .nav-bar {
+  .responsive-nav {
     position: absolute;
-    top: 0;
-    z-index: 9;
-    width: 20%;
-    background-color: transparent;
-    height: 100%;
+    width: 0%;
+    height: 0vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    transition: all ease-in 0.5s;
     right: 0;
-    padding-left: 1.8em;
-    padding-right: 1.8em;
-    transition: all ease-in-out 0.5s;
-    display: flex;
-    flex-direction: column;
-    overflow-y: hidden;
   }
 
-  .navigation-links {
-    align-self: flex-start;
-    transition: ease-in;
-    position: fixed;
-    justify-self: center;
-    margin-top: 7em;
-    transition: all;
-  }
-
-  .navigation-links nav {
-    width: 100%;
-  }
-  .navigation-links nav ul {
-    display: flex;
-    flex-direction: column;
-    gap: 2em;
-    justify-content: space-around;
-    align-items: flex-start;
-
-    width: 100%;
-  }
-
-  .navigation-links nav li a {
-    text-decoration: none;
-    color: rgb(17, 17, 17);
-    text-transform: uppercase;
-    /* font-family: "Kanit", sans-serif; */
-    font-family: "Fira Sans", sans-serif;
-    font-size: 15px;
-  }
-
-  .navigation-links .hire-me {
-    margin-top: 3em;
-    margin-left: -1em;
+  .nav-bar {
+    width: 95%;
+    height: 100%;
+    background-color: white;
+    z-index: 9;
+    border-radius: 5px;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.5);
   }
 
   .burger-menu {
@@ -869,9 +836,9 @@ footer {
     text-transform: capitalize;
     color: #028a0f;
     text-decoration: none;
-    font-size: 19px;
+    font-size: 18px;
     position: absolute;
-    z-index: 10;
+    z-index: 9;
   }
 
   header nav {
@@ -927,7 +894,7 @@ footer {
   } */
 
   .hero-sec {
-    margin-top: 5em;
+    margin-top: 6em;
     display: flex;
     justify-content: space-between;
     flex-direction: column;
