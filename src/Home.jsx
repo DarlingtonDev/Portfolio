@@ -31,7 +31,7 @@ export const ResponsiveNav = (props) => {
         <div
           className="first-nav-div"
           style={{
-            display: props.isdisplayed ? "flex" : "none",
+            display: props.isClicked ? "flex" : "none",
           }}
         >
           <Link>
@@ -47,7 +47,7 @@ export const ResponsiveNav = (props) => {
         <div
           className="second-nav-div"
           style={{
-            display: props.isdisplayed ? "flex" : "none",
+            display: props.isClicked ? "flex" : "none",
           }}
         >
           <Link>
@@ -67,7 +67,7 @@ export const ResponsiveNav = (props) => {
         <div
           className="hire-me-div"
           style={{
-            display: props.isdisplayed ? "flex" : "none",
+            display: props.isClicked ? "flex" : "none",
           }}
         >
           <button>Hire Me</button>
