@@ -119,7 +119,7 @@ select {
   text-transform: uppercase;
   font-family: "Fira Sans", sans-serif;
   margin-bottom: 0.4em;
-  font-size: 28px;
+  font-size: 27px;
   color: rgb(17, 17, 17);
 }
 
@@ -977,7 +977,7 @@ footer {
     text-transform: uppercase;
     font-family: "Fira Sans", sans-serif;
     margin-bottom: 0.4em;
-    font-size: 28px;
+    font-size: 27px;
     color: rgb(17, 17, 17);
   }
 
@@ -1105,7 +1105,7 @@ footer {
     text-align: center;
     margin-top: 0.5em;
     font-family: "Fira Sans", sans-serif;
-    font-size: 28px;
+    font-size: 27px;
   }
 
   .item h3 {
@@ -1133,7 +1133,7 @@ footer {
     text-transform: capitalize;
     padding-top: 1.8em;
     font-family: "Fira Sans", sans-serif;
-    font-size: 28px;
+    font-size: 27px;
   }
 
   .first-about-flex p {
@@ -1199,6 +1199,7 @@ footer {
   .features-head h1 {
     text-transform: capitalize;
     font-family: "Fira Sans", sans-serif;
+    font-size: 27px;
   }
 
   .features-head p {
@@ -1273,6 +1274,7 @@ footer {
   .service-head h1 {
     text-transform: capitalize;
     font-family: "Fira Sans", sans-serif;
+    font-size: 27px;
   }
 
   .service-head p {
@@ -1334,7 +1336,7 @@ footer {
   }
   .service-box-body-mobile h2 {
     font-family: "Fira Sans", sans-serif;
-    font-size: 20px;
+    font-size: 18px;
   }
 
   .service-box-body-mobile p {
@@ -1379,6 +1381,9 @@ footer {
     text-align: center;
   }
 
+  .project-head h1 {
+    font-size: 27px;
+  }
   .project-head h1,
   p {
     text-transform: capitalize;
@@ -1481,6 +1486,7 @@ footer {
   .tech-head h1 {
     text-transform: capitalize;
     font-family: "Fira Sans", sans-serif;
+    font-size: 27px;
   }
   .tech-head p {
     margin-top: 1em;
@@ -1535,6 +1541,7 @@ footer {
   .contact-head h1 {
     text-transform: capitalize;
     font-family: "Fira Sans", sans-serif;
+    font-size: 27px;
   }
   .contact-head h3 {
     text-transform: capitalize;
@@ -1741,7 +1748,7 @@ footer {
     text-transform: uppercase;
     font-family: "Fira Sans", sans-serif;
     margin-bottom: 0.4em;
-    font-size: 28px;
+    font-size: 27px;
     color: rgb(17, 17, 17);
   }
 
