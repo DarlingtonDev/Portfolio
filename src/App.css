@@ -863,6 +863,7 @@ footer {
     box-shadow: none;
     border-radius: 5px;
     border: none;
+    font-size: 16px;
   }
   .burger-menu {
     display: flex;
