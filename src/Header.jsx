@@ -5,6 +5,7 @@ export const Header = (props) => {
     props.setIsClicked(!props.isClicked);
     props.setOverFlow("hidden");
     props.setHeight("0vh");
+    props.addDelay();
   }
   return (
     <header>
@@ -53,10 +54,6 @@ export const Header = (props) => {
           zIndex: props.isClicked && "20",
         }}
       >
-        {/* <FontAwesomeIcon
-icon={faBars}
-style={{ fontSize: "25px", color: "rgba(2, 138, 15, 0.8)" }}
-/> */}
         <div
           className="div-1 "
           style={{

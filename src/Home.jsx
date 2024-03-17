@@ -12,10 +12,8 @@ import { Project } from "./Projects";
 import { Service } from "./Services";
 import { Technology } from "./Tecnology";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faBriefcase } from "@fortawesome/free-solid-svg-icons";
 import { faUser } from "@fortawesome/free-regular-svg-icons";
-import { faCreativeCommonsNd } from "@fortawesome/free-brands-svg-icons";
-import { faFlask } from "@fortawesome/free-solid-svg-icons";
-import { faPhone } from "@fortawesome/free-solid-svg-icons";
 
 export const ResponsiveNav = (props) => {
   return (
@@ -29,25 +27,69 @@ export const ResponsiveNav = (props) => {
         zIndex: props.isClicked && "20",
       }}
     >
-      <div className="nav-bar"></div>
+      <div className="nav-bar">
+        <div
+          className="first-nav-div"
+          style={{ display: props.isClicked && "flex" }}
+        >
+          <Link>
+            <FontAwesomeIcon icon={faBriefcase} style={{ color: "#028a0f" }} />
+            <p>Projects</p>
+          </Link>
+          <Link>
+            <FontAwesomeIcon icon={faUser} style={{ color: "#028a0f" }} />
+            <p>About Me</p>
+          </Link>
+        </div>
+
+        <div
+          className="second-nav-div"
+          style={{ display: props.isdisplayed && "flex" }}
+        >
+          <Link>
+            <p>Services</p>
+          </Link>
+          <Link>
+            <p>Blog</p>
+          </Link>
+          <Link>
+            <p>Resume</p>
+          </Link>
+          <Link>
+            <p>Contact Us</p>
+          </Link>
+        </div>
+      </div>
     </div>
   );
 };
 export const Home = () => {
   const [isClicked, setIsClicked] = useState(false);
-  const [aboutClick, setAboutClick] = useState(false);
+  // const [aboutClick, setAboutClick] = useState(false);
   const [overFlow, setOverFlow] = useState("auto");
   const [height, setHeight] = useState("50vh");
+  const [isdisplayed, setIsDisplayed] = useState(false);
+
+  function addDelay() {
+    setTimeout(() => {
+      setIsDisplayed(!isdisplayed);
+    }, 800);
+  }
 
   return (
     <>
       <div className="homepage" style={{ overflowY: overFlow }}>
-        <ResponsiveNav isClicked={isClicked} height={height} />
+        <ResponsiveNav
+          isClicked={isClicked}
+          height={height}
+          isdisplayed={isdisplayed}
+        />
         <Header
           isClicked={isClicked}
           setIsClicked={setIsClicked}
           setOverFlow={setOverFlow}
           setHeight={setHeight}
+          addDelay={addDelay}
         />
         <Hero />
 
