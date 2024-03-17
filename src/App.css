@@ -1133,6 +1133,7 @@ footer {
     text-transform: capitalize;
     padding-top: 1.8em;
     font-family: "Fira Sans", sans-serif;
+    font-size: 28px;
   }
 
   .first-about-flex p {
