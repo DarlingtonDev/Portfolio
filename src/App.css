@@ -1841,7 +1841,7 @@ footer {
 
   .aboutMeflex {
     width: 100%;
-    margin-top: 6em;
+    margin-top: 5em;
     padding-left: 1em;
     padding-right: 1em;
     gap: 8em;
@@ -1859,7 +1859,7 @@ footer {
     color: #028a0f;
     font-family: "Fira Sans", sans-serif;
     line-height: 1.5em;
-    font-size: 25px;
+    font-size: 24px;
   }
 
   .firstAboutmeflex span {
