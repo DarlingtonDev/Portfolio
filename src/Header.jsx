@@ -1,22 +1,55 @@
 import { Link } from "react-router-dom";
 import "./App.css";
+
+export const BurgerMenu = (props) => {
+  return (
+    <div
+      className="burger-menu"
+      onClick={() => props.changeMenu()}
+      style={{
+        gap: props.isClicked && "0.1em",
+        position: props.isClicked && "fixed",
+        zIndex: props.isClicked && "20",
+      }}
+    >
+      <div
+        className="div-1 "
+        style={{
+          width: props.isClicked && "1.5em",
+          transform: props.isClicked && "translateY(0.25em) rotate(-48deg)",
+        }}
+      ></div>
+      <div
+        className="div-1"
+        style={{
+          width: props.isClicked && "0em",
+          transform: props.isClicked && "translateX(-0.01em)",
+        }}
+      ></div>
+      <div
+        className="div-1"
+        style={{
+          width: props.isClicked && "1.5em",
+          transform:
+            props.isClicked &&
+            "translateY(-0.35em) translateX(-0.5px) rotate(45deg)",
+        }}
+      ></div>
+    </div>
+  );
+};
+
 export const Header = (props) => {
-  function changeMenu() {
-    props.setIsClicked(!props.isClicked);
-    props.setOverFlow("hidden");
-    props.setHeight("0vh");
-    props.addDelay();
-  }
   return (
     <header>
-      <div className="logo">
-        <Link
-          to=""
-          style={{
-            position: props.isClicked && "fixed",
-            zIndex: props.isClicked && "20",
-          }}
-        >
+      <div
+        className="logo"
+        style={{
+          position: props.isClicked && "fixed",
+          zIndex: props.isClicked && "20",
+        }}
+      >
+        <Link to="/" onClick={() => props.changeAbout()}>
           <h2>fortune</h2>
         </Link>
       </div>
@@ -26,13 +59,13 @@ export const Header = (props) => {
             <Link to="/AboutPage">About Me</Link>
           </li>
           <li>
-            <Link to="">Services</Link>
+            <Link>Services</Link>
           </li>
           <li>
-            <Link to="">Testimonials</Link>
+            <Link>Testimonials</Link>
           </li>
           <li>
-            <Link to="">Contact Me</Link>
+            <Link>Contact Me</Link>
           </li>
         </ul>
       </nav>
@@ -45,39 +78,14 @@ export const Header = (props) => {
         </select>
         <button className="hire-me">Hire Me</button>
       </div>
-      <div
-        className="burger-menu"
-        onClick={changeMenu}
-        style={{
-          gap: props.isClicked && "0.1em",
-          position: props.isClicked && "fixed",
-          zIndex: props.isClicked && "20",
-        }}
-      >
-        <div
-          className="div-1 "
-          style={{
-            width: props.isClicked && "1.5em",
-            transform: props.isClicked && "translateY(0.25em) rotate(-48deg)",
-          }}
-        ></div>
-        <div
-          className="div-1"
-          style={{
-            width: props.isClicked && "0em",
-            transform: props.isClicked && "translateX(-0.01em)",
-          }}
-        ></div>
-        <div
-          className="div-1"
-          style={{
-            width: props.isClicked && "1.5em",
-            transform:
-              props.isClicked &&
-              "translateY(-0.35em) translateX(-0.5px) rotate(45deg)",
-          }}
-        ></div>
-      </div>
+      <BurgerMenu
+        isClicked={props.isClicked}
+        changeMenu={props.changeMenu}
+        setIsClicked={props.setIsClicked}
+        setOverFlow={props.setOverFlow}
+        setHeight={props.setHeight}
+        addDelay={props.addDelay}
+      />
     </header>
   );
 };

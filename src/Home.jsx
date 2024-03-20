@@ -1,8 +1,6 @@
 import { About } from "./About";
 import { Achievement } from "./Acheivements";
-import { Link } from "react-router-dom";
 import "./App.css";
-import { useState } from "react";
 import { Contact } from "./Contact";
 import { Features } from "./Features";
 import { Footer } from "./Footer";
@@ -14,6 +12,7 @@ import { Technology } from "./Tecnology";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBriefcase } from "@fortawesome/free-solid-svg-icons";
 import { faUser } from "@fortawesome/free-regular-svg-icons";
+import { Link } from "react-router-dom";
 
 export const ResponsiveNav = (props) => {
   return (
@@ -38,7 +37,7 @@ export const ResponsiveNav = (props) => {
             <FontAwesomeIcon icon={faBriefcase} style={{ color: "#028a0f" }} />
             <p>Projects</p>
           </Link>
-          <Link>
+          <Link to="/AboutPage" onClick={() => props.changeAbout()}>
             <FontAwesomeIcon icon={faUser} style={{ color: "#028a0f" }} />
             <p>About Me</p>
           </Link>
@@ -50,18 +49,13 @@ export const ResponsiveNav = (props) => {
             display: props.isClicked ? "flex" : "none",
           }}
         >
-          <Link>
-            <p>Services</p>
-          </Link>
-          <Link>
-            <p>Blog</p>
-          </Link>
-          <Link>
-            <p>Resume</p>
-          </Link>
-          <Link>
-            <p>Contact Us</p>
-          </Link>
+          <Link>Services</Link>
+
+          <Link>Blog</Link>
+
+          <Link>Resume</Link>
+
+          <Link>Contact Us</Link>
         </div>
 
         <div
@@ -76,33 +70,24 @@ export const ResponsiveNav = (props) => {
     </div>
   );
 };
-export const Home = () => {
-  const [isClicked, setIsClicked] = useState(false);
-  // const [aboutClick, setAboutClick] = useState(false);
-  const [overFlow, setOverFlow] = useState("auto");
-  const [height, setHeight] = useState("50vh");
-  const [isdisplayed, setIsDisplayed] = useState(false);
-
-  function addDelay() {
-    setTimeout(() => {
-      setIsDisplayed(!isdisplayed);
-    }, 500);
-  }
-
+export const Home = (props) => {
   return (
     <>
-      <div className="homepage" style={{ overflowY: overFlow }}>
+      <div className="homepage" style={{ overflowY: props.overFlow }}>
         <ResponsiveNav
-          isClicked={isClicked}
-          height={height}
-          isdisplayed={isdisplayed}
+          isClicked={props.isClicked}
+          height={props.height}
+          isdisplayed={props.isdisplayed}
+          changeAbout={props.changeAbout}
         />
         <Header
-          isClicked={isClicked}
-          setIsClicked={setIsClicked}
-          setOverFlow={setOverFlow}
-          setHeight={setHeight}
-          addDelay={addDelay}
+          isClicked={props.isClicked}
+          setIsClicked={props.setIsClicked}
+          setOverFlow={props.setOverFlow}
+          setHeight={props.setHeight}
+          addDelay={props.addDelay}
+          changeMenu={props.changeMenu}
+          changeAbout={props.changeAbout}
         />
         <Hero />
 
