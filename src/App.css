@@ -932,6 +932,37 @@ footer {
   line-height: 1.8em;
 }
 
+/* Project Page */
+
+.projectPageHead {
+  margin-top: 4.5em;
+  padding-left: 1.5em;
+  padding-right: 1.5em;
+  width: 60%;
+}
+
+.projectPageHead h1 {
+  text-transform: capitalize;
+  font-family: "Fira Sans", sans-serif;
+  font-size: 25px;
+}
+
+.projectPageHead p {
+  margin-top: 1em;
+  font-size: 15px;
+  line-height: 1.5em;
+}
+
+.projectCarousel {
+  margin-top: 7em;
+  text-align: center;
+}
+
+.projectCarousel p {
+  font-style: italic;
+  font-size: 15px;
+}
+
 @media only screen and (max-width: 767px) {
   /* Your styles for mobile phones */
 
@@ -1844,7 +1875,7 @@ footer {
     margin-top: 5em;
     padding-left: 1em;
     padding-right: 1em;
-    gap: 8em;
+    gap: 6em;
     display: flex;
     height: 100%;
     flex-direction: column-reverse;
@@ -1927,7 +1958,7 @@ footer {
     margin-top: 0.4em;
     display: flex;
     gap: 0.5em;
-
+    display: none;
     width: 50%;
     padding-top: 0.4em;
     padding-bottom: 0.4em;
@@ -1992,6 +2023,37 @@ footer {
     font-family: "Fira Sans", sans-serif;
     font-size: 15px;
     line-height: 1.8em;
+  }
+
+  /* Project Page */
+
+  .projectPageHead {
+    margin-top: 5.5em;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+    width: 100%;
+  }
+
+  .projectPageHead h1 {
+    text-transform: capitalize;
+    font-family: "Fira Sans", sans-serif;
+    font-size: 25px;
+  }
+
+  .projectPageHead p {
+    margin-top: 1em;
+    font-size: 15px;
+    line-height: 1.5em;
+  }
+
+  .projectCarousel {
+    margin-top: 7em;
+    text-align: center;
+  }
+
+  .projectCarousel p {
+    font-style: italic;
+    font-size: 15px;
   }
 }
 

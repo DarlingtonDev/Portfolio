@@ -4,6 +4,7 @@ import { Home } from "./Home";
 import { AboutPage } from "./AboutPage";
 import { useState } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { ProjectPage } from "./ProjectPage";
 
 export default function App() {
   const [isClicked, setIsClicked] = useState(false);
@@ -55,6 +56,24 @@ export default function App() {
             path="/AboutPage"
             element={
               <AboutPage
+                isClicked={isClicked}
+                setIsClicked={setIsClicked}
+                overFlow={overFlow}
+                setOverFlow={setOverFlow}
+                setHeight={setHeight}
+                height={height}
+                isdisplayed={isdisplayed}
+                setIsDisplayed={setIsDisplayed}
+                changeMenu={changeMenu}
+                changeAbout={changeAbout}
+              />
+            }
+          />
+
+          <Route
+            path="/ProjectPage"
+            element={
+              <ProjectPage
                 isClicked={isClicked}
                 setIsClicked={setIsClicked}
                 overFlow={overFlow}

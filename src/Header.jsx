@@ -62,7 +62,7 @@ export const Header = (props) => {
             <Link>Services</Link>
           </li>
           <li>
-            <Link>Testimonials</Link>
+            <Link to="/ProjectPage">Projects</Link>
           </li>
           <li>
             <Link>Contact Me</Link>

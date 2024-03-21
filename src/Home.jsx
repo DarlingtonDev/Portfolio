@@ -1,7 +1,6 @@
 import { About } from "./About";
 import { Achievement } from "./Acheivements";
 import "./App.css";
-import { Contact } from "./Contact";
 import { Features } from "./Features";
 import { Footer } from "./Footer";
 import { Header } from "./Header";
@@ -33,7 +32,7 @@ export const ResponsiveNav = (props) => {
             display: props.isClicked ? "flex" : "none",
           }}
         >
-          <Link>
+          <Link to="/ProjectPage" onClick={() => props.changeAbout()}>
             <FontAwesomeIcon icon={faBriefcase} style={{ color: "#028a0f" }} />
             <p>Projects</p>
           </Link>
@@ -97,7 +96,6 @@ export const Home = (props) => {
         <Service />
         <Project />
         <Technology />
-        <Contact />
         <Footer />
       </div>
     </>
