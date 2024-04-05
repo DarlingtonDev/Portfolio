@@ -59,14 +59,14 @@ export const Header = (props) => {
             <Link to="/AboutPage">About Me</Link>
           </li>
           <li>
-            <Link>Services</Link>
+            <Link onClick={() => props.scrollEr("services")}>Services</Link>
           </li>
           <li>
             <Link to="/ProjectPage">Projects</Link>
           </li>
-          <li>
+          {/* <li>
             <Link>Contact Me</Link>
-          </li>
+          </li> */}
         </ul>
       </nav>
       <div className="buttons">

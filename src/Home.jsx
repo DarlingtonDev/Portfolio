@@ -48,13 +48,13 @@ export const ResponsiveNav = (props) => {
             display: props.isClicked ? "flex" : "none",
           }}
         >
-          <Link>Services</Link>
+          <Link onClick={() => props.navScroll("services")}>Services</Link>
 
           <Link>Blog</Link>
 
           <Link>Resume</Link>
 
-          <Link>Contact Us</Link>
+          <Link onClick={() => props.navScroll("contact")}>Contact Us</Link>
         </div>
 
         <div
@@ -78,6 +78,8 @@ export const Home = (props) => {
           height={props.height}
           isdisplayed={props.isdisplayed}
           changeAbout={props.changeAbout}
+          setIsClicked={props.setIsClicked}
+          navScroll={props.navScroll}
         />
         <Header
           isClicked={props.isClicked}
@@ -87,8 +89,10 @@ export const Home = (props) => {
           addDelay={props.addDelay}
           changeMenu={props.changeMenu}
           changeAbout={props.changeAbout}
+          navScroll={props.navScroll}
+          scrollEr={props.scrollEr}
         />
-        <Hero />
+        <Hero scrollEr={props.scrollEr} />
 
         <Achievement />
         <About />

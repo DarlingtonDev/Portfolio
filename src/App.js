@@ -12,6 +12,17 @@ export default function App() {
   const [height, setHeight] = useState("50vh");
   const [isdisplayed, setIsDisplayed] = useState(false);
 
+  const scrollEr = (id) => {
+    const elemenT = document.getElementById(id);
+    elemenT.scrollIntoView({ behavior: "smooth" });
+  };
+
+  const navScroll = (id) => {
+    const contactElement = document.getElementById(id);
+    contactElement.scrollIntoView({ behavior: "smooth" });
+    setIsClicked(!isClicked);
+  };
+
   function addDelay() {
     setTimeout(() => {
       setIsDisplayed(isdisplayed);
@@ -49,6 +60,8 @@ export default function App() {
                 changeAbout={changeAbout}
                 addDelay={addDelay}
                 changeMenu={changeMenu}
+                navScroll={navScroll}
+                scrollEr={scrollEr}
               />
             }
           />
@@ -66,6 +79,8 @@ export default function App() {
                 setIsDisplayed={setIsDisplayed}
                 changeMenu={changeMenu}
                 changeAbout={changeAbout}
+                navScroll={navScroll}
+                scrollEr={scrollEr}
               />
             }
           />

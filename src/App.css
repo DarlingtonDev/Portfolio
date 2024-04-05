@@ -41,7 +41,7 @@ header {
 }
 
 nav {
-  width: 40%;
+  width: 30%;
   padding-top: 0.3em;
 }
 
@@ -472,10 +472,13 @@ span {
 
 .service-box-body {
   width: 80%;
+  padding-top: 1.5em;
+  padding-bottom: 1.5em;
 }
 .service-box-body h2 {
   font-family: "Fira Sans", sans-serif;
   font-size: 20px;
+  font-weight: normal;
 }
 
 .service-box-body p {
@@ -886,6 +889,7 @@ footer {
 .softSkill {
   margin-top: 6em;
   margin-left: 1em;
+  margin-bottom: 6em;
 }
 
 .softSkill h1 {
@@ -928,7 +932,7 @@ footer {
 .skills-details p {
   text-transform: capitalize;
   font-family: "Fira Sans", sans-serif;
-  font-size: 15px;
+  font-size: 16px;
   line-height: 1.8em;
 }
 
@@ -1980,6 +1984,7 @@ footer {
     margin-top: 4em;
     margin-left: 1em;
     margin-right: 1em;
+    margin-bottom: 4em;
   }
 
   .softSkill h1 {

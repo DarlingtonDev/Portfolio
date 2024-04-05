@@ -5,6 +5,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faDownload } from "@fortawesome/free-solid-svg-icons";
 import { faEnvelope } from "@fortawesome/free-regular-svg-icons";
 import { Footer } from "./Footer";
+import { Service } from "./Services";
 export const AboutPage = (props) => {
   return (
     <div className="AboutPage">
@@ -14,6 +15,8 @@ export const AboutPage = (props) => {
         isdisplayed={props.isdisplayed}
         changeAbout={props.changeAbout}
         setCurrentPage={props.setCurrentPage}
+        setIsClicked={props.setIsClicked}
+        navScroll={props.navScroll}
       />
       <Header
         isClicked={props.isClicked}
@@ -25,6 +28,8 @@ export const AboutPage = (props) => {
         setCurrentPage={props.setCurrentPage}
         changeMenu={props.changeMenu}
         changeAbout={props.changeAbout}
+        navScroll={props.navScroll}
+        scrollEr={props.scrollEr}
       />
 
       <div className="aboutMeflex">
@@ -116,6 +121,7 @@ export const AboutPage = (props) => {
           </div>
         </div>
       </div>
+      <Service />
       <Footer />
     </div>
   );

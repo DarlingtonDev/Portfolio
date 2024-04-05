@@ -1,16 +1,20 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faGlobe } from "@fortawesome/free-solid-svg-icons";
-import { faSass } from "@fortawesome/free-brands-svg-icons";
-import { faShop } from "@fortawesome/free-solid-svg-icons";
-import { faHammer } from "@fortawesome/free-solid-svg-icons";
+import {
+  faCode,
+  faComputer,
+  faGlobe,
+  faServer,
+} from "@fortawesome/free-solid-svg-icons";
 export const Service = () => {
   return (
-    <div className="services">
+    <div className="services" id="services">
       <div className="service-head">
         <h1>services</h1>
         <p>
-          Cultivating Collaborative Solutions to Propel
-          <br /> Your Digital Success Forward
+          Experienced and skilled in HTML5, CSS3, JavaScript, React.js, Next.js,
+          jQuery, Python, and Node.js. <br /> Proficient in UI design with
+          up-to-date knowledge. Specialized in building <br /> custom web
+          applications and e-commerce solutions.
         </p>
       </div>
       <div className="service-sec-mobile">
@@ -41,7 +45,7 @@ export const Service = () => {
           <div className="service-box-mobile">
             <div className="service-box-icon-mobile">
               <FontAwesomeIcon
-                icon={faSass}
+                icon={faComputer}
                 style={{
                   fontSize: "34px",
                   paddingLeft: "0.4em",
@@ -51,19 +55,17 @@ export const Service = () => {
               />
             </div>
             <div className="service-box-body-mobile">
-              <h2>
-                Building SAAS <br />
-                Products
-              </h2>
+              <h2>Responsive Design</h2>
               <p>
-                Building and shipping ideas, from features to complete products
+                Less Effort. Smooth User Experience. User Friendly website.
+                Mobile Segment. Search Engine Optimization (SEO) .
               </p>
             </div>
           </div>
           <div className="service-box-mobile">
             <div className="service-box-icon-mobile">
               <FontAwesomeIcon
-                icon={faShop}
+                icon={faCode}
                 style={{
                   fontSize: "34px",
                   paddingLeft: "0.4em",
@@ -73,20 +75,17 @@ export const Service = () => {
               />
             </div>
             <div className="service-box-body-mobile">
-              <h2>
-                E-commerce <br />
-                Solutions
-              </h2>
+              <h2>Clean Code</h2>
               <p>
-                Developing custom e-commerce platforms or integrating with
-                existing solutions like Shopify or WooCommerce
+                Understandable and readable code, Always following updated
+                structure, simple and focused.
               </p>
             </div>
           </div>
           <div className="service-box-mobile">
             <div className="service-box-icon-mobile">
               <FontAwesomeIcon
-                icon={faHammer}
+                icon={faServer}
                 style={{
                   fontSize: "34px",
                   paddingLeft: "0.4em",
@@ -96,13 +95,10 @@ export const Service = () => {
               />
             </div>
             <div className="service-box-body-mobile">
-              <h2>
-                Maintenance and <br /> Support
-              </h2>
+              <h2>Creative Look</h2>
               <p>
-                Providing ongoing maintenance, updates, and technical support
-                services to ensure the smooth operation and performance of
-                websites and applications post-launch.
+                Accessible to All Users. Well Planned Information Architecture.
+                Fast Load Times. Effective Navigation.
               </p>
             </div>
           </div>
@@ -166,20 +162,20 @@ export const Service = () => {
               />
             </div>
             <div className="service-box-body">
-              <h2>
+              <h2 style={{ fontWeight: "normal" }}>
                 Web and Mobile app <br />
                 development
               </h2>
               <p>
-                I craft user-centric web and mobile apps that bridge the gap
-                between imagination and reality.
+                A passion for knowledge. Ability to plan for everything. Great
+                debugging skills. “Accelerated Failure” Mentality.
               </p>
             </div>
           </div>
           <div className="service-box">
             <div className="service-box-icon">
               <FontAwesomeIcon
-                icon={faSass}
+                icon={faComputer}
                 style={{
                   fontSize: "34px",
                   paddingLeft: "0.4em",
@@ -188,12 +184,10 @@ export const Service = () => {
               />
             </div>
             <div className="service-box-body">
-              <h2>
-                Building SAAS <br />
-                Products
-              </h2>
+              <h2>Responsive Design</h2>
               <p>
-                Building and shipping ideas, from features to complete products
+                Less Effort. Smooth User Experience. User Friendly website.
+                Mobile Segment. Search Engine Optimization (SEO) .
               </p>
             </div>
           </div>
@@ -248,7 +242,7 @@ export const Service = () => {
           <div className="service-box">
             <div className="service-box-icon">
               <FontAwesomeIcon
-                icon={faShop}
+                icon={faCode}
                 style={{
                   fontSize: "34px",
                   paddingLeft: "0.4em",
@@ -257,20 +251,17 @@ export const Service = () => {
               />
             </div>
             <div className="service-box-body">
-              <h2>
-                E-commerce <br />
-                Solutions
-              </h2>
+              <h2>Clean Code</h2>
               <p>
-                Developing custom e-commerce platforms or integrating with
-                existing solutions like Shopify or WooCommerce
+                Understandable and readable code, Always following updated
+                structure, simple and focused.
               </p>
             </div>
           </div>
           <div className="service-box">
             <div className="service-box-icon">
               <FontAwesomeIcon
-                icon={faHammer}
+                icon={faServer}
                 style={{
                   fontSize: "34px",
                   paddingLeft: "0.4em",
@@ -279,13 +270,10 @@ export const Service = () => {
               />
             </div>
             <div className="service-box-body">
-              <h2>
-                Maintenance and <br /> Support
-              </h2>
+              <h2>Creative Look</h2>
               <p>
-                Providing ongoing maintenance, updates, and technical support
-                services to ensure the smooth operation and performance of
-                websites and applications post-launch.
+                Accessible to All Users. Well Planned Information Architecture.
+                Fast Load Times. Effective Navigation.
               </p>
             </div>
           </div>
