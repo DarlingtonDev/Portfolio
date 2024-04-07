@@ -12,7 +12,8 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBriefcase } from "@fortawesome/free-solid-svg-icons";
 import { faUser } from "@fortawesome/free-regular-svg-icons";
 import { Link } from "react-router-dom";
-
+import { Hireme } from "./Hireme";
+import { Loader } from "./Loader";
 export const ResponsiveNav = (props) => {
   return (
     <div
@@ -73,6 +74,13 @@ export const Home = (props) => {
   return (
     <>
       <div className="homepage" style={{ overflowY: props.overFlow }}>
+        {props.isLoading && <Loader />}
+        <Hireme
+          showHire={props.showHire}
+          showHireClick={props.showHireClick}
+          removeHire={props.removeHire}
+          isLoading={props.isLoading}
+        />
         <ResponsiveNav
           isClicked={props.isClicked}
           height={props.height}
@@ -91,6 +99,8 @@ export const Home = (props) => {
           changeAbout={props.changeAbout}
           navScroll={props.navScroll}
           scrollEr={props.scrollEr}
+          showHire={props.showHire}
+          showHireClick={props.showHireClick}
         />
         <Hero scrollEr={props.scrollEr} />
 

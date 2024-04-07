@@ -6,9 +6,17 @@ import { faDownload } from "@fortawesome/free-solid-svg-icons";
 import { faEnvelope } from "@fortawesome/free-regular-svg-icons";
 import { Footer } from "./Footer";
 import { Service } from "./Services";
+import { Hireme } from "./Hireme";
+import { Loader } from "./Loader";
 export const AboutPage = (props) => {
   return (
     <div className="AboutPage">
+      {props.isLoading && <Loader />}
+      <Hireme
+        showHire={props.showHire}
+        showHireClick={props.showHireClick}
+        removeHire={props.removeHire}
+      />
       <ResponsiveNav
         isClicked={props.isClicked}
         height={props.height}
@@ -30,6 +38,8 @@ export const AboutPage = (props) => {
         changeAbout={props.changeAbout}
         navScroll={props.navScroll}
         scrollEr={props.scrollEr}
+        showHire={props.showHire}
+        showHireClick={props.showHireClick}
       />
 
       <div className="aboutMeflex">

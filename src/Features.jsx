@@ -108,9 +108,9 @@ export const Features = () => {
           </div>
         </div>
       </div>
-      <div className="learn-more">
-        <Link>learn more</Link>
-      </div>
+      {/* <div className="learn-more">
+        <Link to="/ProjectPage">learn more</Link>
+      </div> */}
     </div>
   );
 };

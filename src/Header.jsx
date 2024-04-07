@@ -76,7 +76,9 @@ export const Header = (props) => {
           <option value="es">ES</option>
           <option value="de">DE</option>
         </select>
-        <button className="hire-me">Hire Me</button>
+        <button className="hire-me" onClick={() => props.showHireClick()}>
+          Hire Me
+        </button>
       </div>
       <BurgerMenu
         isClicked={props.isClicked}

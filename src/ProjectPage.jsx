@@ -1,8 +1,17 @@
 import { Header } from "./Header";
 import { ResponsiveNav } from "./Home";
+import { Hireme } from "./Hireme";
+import { Loader } from "./Loader";
 export const ProjectPage = (props) => {
   return (
     <div className="projectPage">
+      {props.isLoading && <Loader />}
+      <Hireme
+        showHire={props.showHire}
+        showHireClick={props.showHireClick}
+        removeHire={props.removeHire}
+        isLoading={props.isLoading}
+      />
       <ResponsiveNav
         isClicked={props.isClicked}
         height={props.height}
@@ -20,6 +29,9 @@ export const ProjectPage = (props) => {
         setCurrentPage={props.setCurrentPage}
         changeMenu={props.changeMenu}
         changeAbout={props.changeAbout}
+        scrollEr={props.scrollEr}
+        showHire={props.showHire}
+        showHireClick={props.showHireClick}
       />
 
       <div className="projectPageHead">
