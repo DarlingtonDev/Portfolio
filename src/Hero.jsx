@@ -16,9 +16,9 @@ export const Hero = (props) => {
         <div className="btn-div">
           <button onClick={() => props.scrollEr("contact")}>contact us</button>
 
-          <button onClick={() => (window.location.href = "/Aboutpage")}>
-            learn more
-          </button>
+          <Link to="/AboutPage">
+            <button>learn more</button>
+          </Link>
         </div>
       </div>
       <div className="second-hero">
