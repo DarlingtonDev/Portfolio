@@ -25,6 +25,8 @@ export const AboutPage = (props) => {
         setCurrentPage={props.setCurrentPage}
         setIsClicked={props.setIsClicked}
         navScroll={props.navScroll}
+        showHire={props.showHire}
+        showHireClick={props.showHireClick}
       />
       <Header
         isClicked={props.isClicked}

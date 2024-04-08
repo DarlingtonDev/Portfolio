@@ -18,6 +18,9 @@ export const ProjectPage = (props) => {
         isdisplayed={props.isdisplayed}
         changeAbout={props.changeAbout}
         setCurrentPage={props.setCurrentPage}
+        showHire={props.showHire}
+        showHireClick={props.showHireClick}
+        setIsClicked={props.setIsClicked}
       />
       <Header
         isClicked={props.isClicked}

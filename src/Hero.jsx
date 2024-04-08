@@ -1,5 +1,4 @@
 import avatar from "./Images/peeps-avatar-removebg-preview.png";
-import { Link } from "react-router-dom";
 export const Hero = (props) => {
   return (
     <div className="hero-sec">
@@ -16,7 +15,9 @@ export const Hero = (props) => {
         <div className="btn-div">
           <button onClick={() => props.scrollEr("contact")}>contact us</button>
 
-          <button>learn more</button>
+          <button onClick={() => (window.location.href = "/AboutPage")}>
+            learn more
+          </button>
         </div>
       </div>
       <div className="second-hero">

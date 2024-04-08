@@ -64,7 +64,14 @@ export const ResponsiveNav = (props) => {
             display: props.isClicked ? "flex" : "none",
           }}
         >
-          <button>Hire Me</button>
+          <button
+            onClick={() => {
+              props.showHireClick();
+              props.setIsClicked(!props.isClicked);
+            }}
+          >
+            Hire Me
+          </button>
         </div>
       </div>
     </div>
@@ -88,6 +95,8 @@ export const Home = (props) => {
           changeAbout={props.changeAbout}
           setIsClicked={props.setIsClicked}
           navScroll={props.navScroll}
+          showHire={props.showHire}
+          showHireClick={props.showHireClick}
         />
         <Header
           isClicked={props.isClicked}
