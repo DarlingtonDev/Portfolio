@@ -2,7 +2,10 @@ import { faXmark } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 export const Hireme = (props) => {
   return (
-    <div className="hireme-div" style={{ opacity: props.showHire ? "1" : "0" }}>
+    <div
+      className="hireme-div"
+      style={{ display: props.showHire ? "flex" : "none" }}
+    >
       <FontAwesomeIcon
         icon={faXmark}
         style={{
